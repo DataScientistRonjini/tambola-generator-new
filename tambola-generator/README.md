@@ -20,8 +20,13 @@ to bottom.
 
 # Solution:
 # APIs used in this project are as follows
+1) localhost:3000/api/v1/auth/register
+2) localhost:3000/api/v1/auth/login
+3) localhost:3000/api/v1/tambola/create
+4) localhost:3000/api/v1/tambola/fetch
+5) localhost:3000/api/v1/tambola/fetch?limit=4&page=2
 
-1. Authentication APIs:
+A. Authentication APIs:
     - ## localhost:3000/api/v1/auth/register
     Description: This api is used for User Registration
     method: POST
@@ -59,7 +64,7 @@ to bottom.
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE"
     }
 
-2. Tambola APIs:
+B. Tambola APIs:
     - ## localhost:3000/api/v1/tambola/create
     Description: This api is used for Tambola Ticket generation with variable number of tickets as input
     method: POST
