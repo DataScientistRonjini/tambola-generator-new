@@ -24,7 +24,8 @@ to bottom.
     - ## localhost:3000/api/v1/auth/register
     Description: This api is used for User Registration
     method: POST
-    Request Body format: 
+    Request Body format:
+<pre> 
     {
         "username":"ranjini",
         "email":"ranjini@gmail.com",
@@ -32,29 +33,35 @@ to bottom.
         "password":"1234pqr",
         "confirm_password":"1234pqr"
     }
+<pre>
 
     Response format: 
+    <pre>
     {
         "user": {
             "name": "ranjini"
         },
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODUwMDksImV4cCI6MTY4NjU3NzAwOX0.FBZ9br80tAFjJc6OqS-V4KuJBEoB4-HEnDtad4ZJh9Q"
     }
-
+</pre>
     - ## localhost:3000/api/v1/auth/login
     Description: This api is used for User Login
     method: POST
     Request Body format:
+    <pre>
     {
         "email":"ranjini@gmail.com",
         "password":"1234pqr"
     }
+    </pre>
 
     Response format:
+    <pre>
     {
         "username": "ranjini",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE"
     }
+    </pre>
 
 2. Tambola APIs:
     - ## localhost:3000/api/v1/tambola/create
@@ -65,10 +72,12 @@ to bottom.
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE
 
     Request Body format:
+<pre>
     {
         "no_of_tickets":2
     }
-
+</pre>
+<pre>
     Response format:
     {
         "data": {
@@ -152,6 +161,7 @@ to bottom.
         },
         "msg": "Tambola tickets generated successfully!"
     }
+</pre>
 
     - ## localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola tickets with respective ids and pagination
@@ -169,6 +179,7 @@ to bottom.
     ## for localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola Tickets
     response:
+<pre>
     {
     "data": [
         {
@@ -1539,6 +1550,7 @@ to bottom.
 ## for localhost:3000/api/v1/tambola/fetch?limit=4&page=2
 Description: This api is used for fetching all the Tambola Tickets with pagination
 response:
+<pre>
 {
     "data": [
         {
@@ -1854,6 +1866,6 @@ response:
     "totalPages": 2,
     "page": 2
 }
-
+</pre>
 
 
