@@ -16,7 +16,7 @@ to bottom.
 ● All the numbers 1 to 90 are used only once in each set of 6 tickets.
 ● Each column must have at least 1 number
 ● Blank Cell fill by zero or “x”
-
+</pre>
 
 # Solution:
 # APIs used in this project are as follows
