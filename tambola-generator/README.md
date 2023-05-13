@@ -28,10 +28,10 @@ to bottom.
 
 A. Authentication APIs:
    ## localhost:3000/api/v1/auth/register
+   <pre>
     Description: This api is used for User Registration
     method: POST
     Request Body format:
-  <pre>
     {
         "username":"ranjini",
         "email":"ranjini@gmail.com",
@@ -39,9 +39,8 @@ A. Authentication APIs:
         "password":"1234pqr",
         "confirm_password":"1234pqr"
     }
- </pre>
+
     Response format:
- <pre>
     {
         "user": {
             "name": "ranjini"
