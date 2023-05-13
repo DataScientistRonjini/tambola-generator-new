@@ -68,11 +68,13 @@ to bottom.
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE
 
     Request Body format:
+    <pre>
     {
         "no_of_tickets":2
     }
-
+    </pre>
     Response format:
+    <pre>
     {
         "data": {
             "tambola_tickets": [
@@ -155,6 +157,7 @@ to bottom.
         },
         "msg": "Tambola tickets generated successfully!"
     }
+    </pre>
 
     - ## localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola tickets with respective ids and pagination
@@ -172,6 +175,7 @@ to bottom.
     ## for localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola Tickets
     response:
+    <pre>
     {
     "data": [
         {
@@ -1538,10 +1542,11 @@ to bottom.
     "totalPages": 1,
     "page": 1
 }
-
+</pre>
 ## for localhost:3000/api/v1/tambola/fetch?limit=4&page=2
 Description: This api is used for fetching all the Tambola Tickets with pagination
 response:
+<pre>
 {
     "data": [
         {
@@ -1857,6 +1862,7 @@ response:
     "totalPages": 2,
     "page": 2
 }
+</pre>
 
 
 
