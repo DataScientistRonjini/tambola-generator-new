@@ -31,7 +31,7 @@ A. Authentication APIs:
     Description: This api is used for User Registration
     method: POST
     Request Body format:
-    <pre>
+  <pre>
     {
         "username":"ranjini",
         "email":"ranjini@gmail.com",
@@ -39,16 +39,16 @@ A. Authentication APIs:
         "password":"1234pqr",
         "confirm_password":"1234pqr"
     }
-    </pre>
+ </pre>
     Response format:
-    <pre>
+ <pre>
     {
         "user": {
             "name": "ranjini"
         },
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODUwMDksImV4cCI6MTY4NjU3NzAwOX0.FBZ9br80tAFjJc6OqS-V4KuJBEoB4-HEnDtad4ZJh9Q"
     }
-    </pre>
+ </pre>
    ## localhost:3000/api/v1/auth/login
     Description: This api is used for User Login
     method: POST
