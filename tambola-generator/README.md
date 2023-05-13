@@ -49,6 +49,7 @@ A. Authentication APIs:
     }
  </pre>
    ## localhost:3000/api/v1/auth/login
+ <pre>
     Description: This api is used for User Login
     method: POST
     Request Body format:
@@ -62,9 +63,10 @@ A. Authentication APIs:
         "username": "ranjini",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE"
     }
-
+</pre>
 B. Tambola APIs:
    ## localhost:3000/api/v1/tambola/create
+   <pre>
     Description: This api is used for Tambola Ticket generation with variable number of tickets as input
     method: POST
 
@@ -72,13 +74,13 @@ B. Tambola APIs:
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE
 
     Request Body format:
-    <pre>
+   
     {
         "no_of_tickets":2
     }
-    </pre>
+   
     Response format:
-    <pre>
+   
     {
         "data": {
             "tambola_tickets": [
@@ -164,6 +166,7 @@ B. Tambola APIs:
     </pre>
 
    ## localhost:3000/api/v1/tambola/fetch
+   <pre>
     Description: This api is used for fetching all the Tambola tickets with respective ids and pagination
     method: GET
 
@@ -179,7 +182,7 @@ B. Tambola APIs:
     ## for localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola Tickets
     response:
-    <pre>
+   
     {
     "data": [
         {
@@ -1548,9 +1551,9 @@ B. Tambola APIs:
 }
 </pre>
 ## for localhost:3000/api/v1/tambola/fetch?limit=4&page=2
+<pre>
 Description: This api is used for fetching all the Tambola Tickets with pagination
 response:
-<pre>
 {
     "data": [
         {
