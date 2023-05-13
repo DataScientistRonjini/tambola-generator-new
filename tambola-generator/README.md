@@ -27,7 +27,7 @@ to bottom.
 5) localhost:3000/api/v1/tambola/fetch?limit=4&page=2
 
 A. Authentication APIs:
-    - ## localhost:3000/api/v1/auth/register
+   ## localhost:3000/api/v1/auth/register
     Description: This api is used for User Registration
     method: POST
     Request Body format:
@@ -49,7 +49,7 @@ A. Authentication APIs:
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODUwMDksImV4cCI6MTY4NjU3NzAwOX0.FBZ9br80tAFjJc6OqS-V4KuJBEoB4-HEnDtad4ZJh9Q"
     }
     </pre>
-    - ## localhost:3000/api/v1/auth/login
+   ## localhost:3000/api/v1/auth/login
     Description: This api is used for User Login
     method: POST
     Request Body format:
@@ -65,7 +65,7 @@ A. Authentication APIs:
     }
 
 B. Tambola APIs:
-    - ## localhost:3000/api/v1/tambola/create
+   ## localhost:3000/api/v1/tambola/create
     Description: This api is used for Tambola Ticket generation with variable number of tickets as input
     method: POST
 
@@ -164,7 +164,7 @@ B. Tambola APIs:
     }
     </pre>
 
-    - ## localhost:3000/api/v1/tambola/fetch
+   ## localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola tickets with respective ids and pagination
     method: GET
 
