@@ -1,4 +1,5 @@
 # Problem Statement :
+<pre>
 ● Create Login API
 ● Create Tambula ticket Create API*(No of tickets will be variable not a fixed number).
 Return a Unique id on the Creation of the ticket.
@@ -15,17 +16,22 @@ to bottom.
 ● All the numbers 1 to 90 are used only once in each set of 6 tickets.
 ● Each column must have at least 1 number
 ● Blank Cell fill by zero or “x”
-
+</pre>
 
 # Solution:
 # APIs used in this project are as follows
+1) localhost:3000/api/v1/auth/register
+2) localhost:3000/api/v1/auth/login
+3) localhost:3000/api/v1/tambola/create
+4) localhost:3000/api/v1/tambola/fetch
+5) localhost:3000/api/v1/tambola/fetch?limit=4&page=2
 
-1. Authentication APIs:
-    - ## localhost:3000/api/v1/auth/register
+A. Authentication APIs:
+   ## localhost:3000/api/v1/auth/register
+   <pre>
     Description: This api is used for User Registration
     method: POST
     Request Body format:
-<pre> 
     {
         "username":"ranjini",
         "email":"ranjini@gmail.com",
@@ -35,16 +41,16 @@ to bottom.
     }
 <pre>
 
-    Response format: 
-    <pre>
+    Response format:
     {
         "user": {
             "name": "ranjini"
         },
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODUwMDksImV4cCI6MTY4NjU3NzAwOX0.FBZ9br80tAFjJc6OqS-V4KuJBEoB4-HEnDtad4ZJh9Q"
     }
-</pre>
-    - ## localhost:3000/api/v1/auth/login
+ </pre>
+   ## localhost:3000/api/v1/auth/login
+ <pre>
     Description: This api is used for User Login
     method: POST
     Request Body format:
@@ -61,10 +67,10 @@ to bottom.
         "username": "ranjini",
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE"
     }
-    </pre>
-
-2. Tambola APIs:
-    - ## localhost:3000/api/v1/tambola/create
+</pre>
+B. Tambola APIs:
+   ## localhost:3000/api/v1/tambola/create
+   <pre>
     Description: This api is used for Tambola Ticket generation with variable number of tickets as input
     method: POST
 
@@ -72,13 +78,13 @@ to bottom.
     eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDVmOTI3MWM5OGM4ZWRhMTc1Mjk3ZmQiLCJpYXQiOjE2ODM5ODU2MzQsImV4cCI6MTY4NjU3NzYzNH0.j0riIwdJdP--4T4I5Zn04Sc2Xp7dZdYat5oms4WbGcE
 
     Request Body format:
-<pre>
+   
     {
         "no_of_tickets":2
     }
-</pre>
-<pre>
+   
     Response format:
+   
     {
         "data": {
             "tambola_tickets": [
@@ -161,9 +167,10 @@ to bottom.
         },
         "msg": "Tambola tickets generated successfully!"
     }
-</pre>
+    </pre>
 
-    - ## localhost:3000/api/v1/tambola/fetch
+   ## localhost:3000/api/v1/tambola/fetch
+   <pre>
     Description: This api is used for fetching all the Tambola tickets with respective ids and pagination
     method: GET
 
@@ -179,7 +186,7 @@ to bottom.
     ## for localhost:3000/api/v1/tambola/fetch
     Description: This api is used for fetching all the Tambola Tickets
     response:
-<pre>
+   
     {
     "data": [
         {
@@ -1546,8 +1553,9 @@ to bottom.
     "totalPages": 1,
     "page": 1
 }
-
+</pre>
 ## for localhost:3000/api/v1/tambola/fetch?limit=4&page=2
+<pre>
 Description: This api is used for fetching all the Tambola Tickets with pagination
 response:
 <pre>
